@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+
+main {
+  display: flex;
+  width: 100%;
+/*   justify-content: center;
+  align-items: center;
+  display: flex; */
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 50px;
+}
+
+main .left h1{
+  font-size: 60px;
+  margin-bottom: 1em;
+}
+
+main .left .link{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+main .left .link a{
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 0em;
+  border-radius: 15px;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+
+main .left .link a:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+main .left .link i{
+  font-size: 25px;
+  padding-right: 1em;
+  }
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #888;
+  margin-bottom: 2em;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #444;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+main .left .inp{
+  display: flex;
+  flex-direction: column;
+}
+
+main .left input{
+  border: 1px solid #ffffffa2;
+  padding: 1.5em 2em;
+  background-color: transparent;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* main .left .inp input:active{
+  border: 1px solid cyan;
+} */
+
+main .left .inp a{
+  text-decoration: none;
+  color: #fff;
+}
+
+main .left .inp .cont{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 1em;
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: 800;
+  background-color: #444;
+  transition-duration: 0.5s;
+}
+
+main .left .inp .cont:hover{
+  background-color: #444444b0;
+}
+
+main .left .inp p{
+  text-align: center;
+  margin-top: 1em;
+  color: #ffffffa4;
+  font-size: 15px;
+}
+
+main .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+main .right svg{
+  width: 400px;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1em;
+}
+
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+footer .links {
+  gap: 5px;
+  display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffffa4;
+  font-weight: 900;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: #fff;
+}
