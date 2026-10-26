@@ -162,10 +162,10 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   main .left {
     padding: 0px;
-    
+
   }
 
   main .left .link a{
