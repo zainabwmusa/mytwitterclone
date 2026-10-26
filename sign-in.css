@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3em;
+  overflow-x: hidden;
 }
 
 main {
@@ -151,7 +152,35 @@ footer {
   footer {
     flex-direction: column;
   }
+
+  main .right {
+    display: none;
+  }
+
+  main .left h1{
+    font-size: 30px;
+  }
 }
+
+@media (max-width: 375px) {
+  main .left {
+    padding: 20px;
+  }
+
+  main .left .link a{
+    font-size: 15px;
+    padding: 5px 0em;
+  }
+
+    main .left .link i{
+      font-size: 15px;
+    }
+
+    main .left input{
+      padding: 1em 2em;
+    }
+  }
+
 
 footer .links {
   gap: 5px;
