@@ -165,7 +165,9 @@ footer {
 @media (max-width: 425px) {
   main .left {
     padding: 0px;
-
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
   }
 
   main .left .link a{
