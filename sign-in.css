@@ -17,7 +17,7 @@ body {
 main {
   display: flex;
   width: 100%;
-/*   justify-content: center;
+  /*   justify-content: center;
   align-items: center;
   display: flex; */
 }
@@ -28,12 +28,12 @@ main {
   padding: 50px;
 }
 
-main .left h1{
+main .left h1 {
   font-size: 60px;
   margin-bottom: 1em;
 }
 
-main .left .link{
+main .left .link {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -41,7 +41,7 @@ main .left .link{
   margin-bottom: 2em;
 }
 
-main .left .link a{
+main .left .link a {
   text-decoration: none;
   background-color: #fff;
   color: #000;
@@ -51,16 +51,16 @@ main .left .link a{
   transition-duration: 0.5s;
 }
 
-main .left .link a:hover{
+main .left .link a:hover {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
 }
 
-main .left .link i{
+main .left .link i {
   font-size: 25px;
   padding-right: 1em;
-  }
+}
 
 .divider {
   display: flex;
@@ -72,7 +72,7 @@ main .left .link i{
 
 .divider::before,
 .divider::after {
-  content: '';
+  content: "";
   flex: 1;
   border-bottom: 1px solid #444;
 }
@@ -85,12 +85,12 @@ main .left .link i{
   margin-left: 10px;
 }
 
-main .left .inp{
+main .left .inp {
   display: flex;
   flex-direction: column;
 }
 
-main .left input{
+main .left input {
   border: 1px solid #ffffffa2;
   padding: 1.5em 2em;
   background-color: transparent;
@@ -102,12 +102,12 @@ main .left input{
   border: 1px solid cyan;
 } */
 
-main .left .inp a{
+main .left .inp a {
   text-decoration: none;
   color: #fff;
 }
 
-main .left .inp .cont{
+main .left .inp .cont {
   font-size: 15px;
   text-align: center;
   margin-top: 1em;
@@ -118,18 +118,18 @@ main .left .inp .cont{
   transition-duration: 0.5s;
 }
 
-main .left .inp .cont:hover{
+main .left .inp .cont:hover {
   background-color: #444444b0;
 }
 
-main .left .inp p{
+main .left .inp p {
   text-align: center;
   margin-top: 1em;
   color: #ffffffa4;
   font-size: 15px;
 }
 
-main .right{
+main .right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,27 +137,40 @@ main .right{
   position: relative;
 }
 
-main .right svg{
+main .right svg {
   width: 400px;
 }
 
 footer {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  gap: 1em;
+  width: 100%;
+  padding: 0 1rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   footer {
     flex-direction: column;
+    padding: 0 0.75rem;
+  }
+
+  footer .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2rem 0.35rem;
+  }
+
+  footer a {
+    font-size: 11px;
+    line-height: 1.5;
   }
 
   main .right {
     display: none;
   }
 
-  main .left h1{
+  main .left h1 {
     font-size: 30px;
   }
 }
@@ -170,24 +183,27 @@ footer {
     justify-content: center;
   }
 
-  main .left .link a{
+  main .left .link a {
     font-size: 15px;
     padding: 5px 0em;
   }
 
-    main .left .link i{
-      font-size: 15px;
-    }
-
-    main .left input{
-      padding: 1em 2em;
-    }
+  main .left .link i {
+    font-size: 15px;
   }
 
+  main .left input {
+    padding: 1em 2em;
+  }
+}
 
 footer .links {
-  gap: 5px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 0.4rem;
+  text-align: center;
 }
 
 footer a {
