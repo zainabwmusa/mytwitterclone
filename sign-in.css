@@ -164,7 +164,8 @@ footer {
 
 @media (max-width: 375px) {
   main .left {
-    padding: 20px;
+    padding: 0px;
+    
   }
 
   main .left .link a{
