@@ -151,13 +151,10 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    flex-direction: column;
     padding: 0 0.75rem;
   }
 
   footer .links {
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 0.2rem 0.35rem;
   }
 
@@ -171,21 +168,18 @@ footer {
   }
 
   main .left h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 
 @media (max-width: 425px) {
   main .left {
     padding: 0px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
   }
 
   main .left .link a {
     font-size: 15px;
-    padding: 5px 0em;
+    padding: 10px 0em;
   }
 
   main .left .link i {
@@ -194,6 +188,10 @@ footer {
 
   main .left input {
     padding: 1em 2em;
+  }
+
+  main .left .inp p{
+    margin-bottom: 2em;
   }
 }
 
